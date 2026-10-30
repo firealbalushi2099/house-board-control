@@ -1,0 +1,48 @@
+/* Shared appearance only. Pages, geometry, assets and business rules stay unchanged. */
+.theme-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}.theme-choice{position:relative;display:grid;gap:10px;text-align:right;min-width:0;padding:12px;border:2px solid var(--line);border-radius:12px;background:var(--sheet);box-shadow:none}.theme-choice[aria-pressed=true]{border-color:var(--green);outline:2px solid var(--green);outline-offset:2px}.theme-choice[aria-pressed=true]:after{content:'✓';position:absolute;top:16px;left:18px;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--green);color:white;font-size:14px}.theme-choice>b{font-size:15px;line-height:1.3}.theme-preview{height:70px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;padding:23px 8px 8px;border:1px solid #26323b33;border-radius:7px;position:relative;overflow:hidden}.theme-preview:before{content:'';position:absolute;inset:0 0 auto;height:17px}.theme-preview i{border-radius:3px}.theme-preview.paper{background:#fbf3df}.theme-preview.paper:before{background:#fffaf0;border-bottom:1px solid #26323b}.theme-preview.paper i{border:1px solid #26323b;background:#cdeedd}.theme-preview.paper i:nth-child(2){background:#ffd86b}.theme-preview.paper i:nth-child(3){background:#f9d4de}.theme-preview.classic{background:#f4eee2}.theme-preview.classic:before{background:#10343c;border-bottom:2px solid #e7ad44}.theme-preview.classic i{background:#fffdf8;border:1px solid #dfe7e3;box-shadow:0 3px 5px #0a202815}.theme-preview.classic i:nth-child(2){background:#dff3eb}
+:root[data-theme=classic]{--bg:#f4eee2;--sheet:#fffdf8;--ink:#17343b;--muted:#70858a;--line:#dfe7e3;--yellow:#e7ad44;--mint:#dff3eb;--rose:#f7ded7;--sky:#e1eff4;--lilac:#e7e5f0;--green:#218a76;--red:#b84338;--gold:#b88322;--stroke:1px solid #dfe7e3;--shadow:0 10px 28px #09272e13;--paper:#f4eee2;--white:#fffdf8;--green-soft:#dff3eb;--red-soft:#f7ded7;--gold-soft:#fff4dd}
+[data-theme=classic] body{background-color:#f4eee2;background-image:radial-gradient(#10343c0b .8px,transparent .8px);background-size:11px 11px}
+[data-theme=classic] .tv-display .house-header{background:linear-gradient(110deg,#0a2028,#10343c);color:#fffdf8;border-bottom:2px solid #e7ad44;box-shadow:0 8px 22px #09272e14}
+[data-theme=classic] .tv-display .house-brand,[data-theme=classic] .tv-display .prayer-head>span{color:#dff3eb}
+[data-theme=classic] .tv-display .hero-clock #clockLarge{text-shadow:2px 3px 0 #e7ad4433;color:#fffdf8}
+[data-theme=classic] .tv-display .hero-clock #clockPeriod{color:#e7ad44}
+[data-theme=classic] .tv-display .family-art{mix-blend-mode:normal;background:#fffdf8;border-radius:14px;border:1px solid #ffffff50;box-shadow:0 8px 20px #00000020}
+[data-theme=classic] .tv-display .prayer-head h2{background:none;color:#fffdf8}
+[data-theme=classic] .tv-display .prayer-head>small{background:#e7ad44;color:#0a2028;border-color:#e7ad44;box-shadow:none}
+[data-theme=classic] .tv-display .week-day{box-shadow:0 4px 12px #09272e0a;rotate:0;border-color:#dfe7e3}
+[data-theme=classic] .tv-display .week-day.today{background:#10343c;color:#fffdf8;box-shadow:inset 0 -3px 0 #e7ad44}
+[data-theme=classic] .tv-display .week-day small{background:#e7ad44;border-color:#e7ad44;color:#17343b;rotate:0}
+[data-theme=classic] .tv-display .now-banner{background:#fffdf8;border:1px solid #e7ad44;box-shadow:0 10px 28px #09272e10}
+[data-theme=classic] .tv-display .now-phase{color:#218a76}
+[data-theme=classic] .tv-display .now-track{border-color:#dfe7e3;background:#e7eeea}
+[data-theme=classic] .tv-display .now-track i{background:#2c9c8a}
+[data-theme=classic] .tv-display .now-count{box-shadow:0 5px 18px #09272e10;border-color:#e7ad44;rotate:0}
+[data-theme=classic] .tv-display .paper-panel,[data-theme=classic] .tv-display .summary-card,[data-theme=classic] .tv-display .kid-card,[data-theme=classic] .tv-display .tv-console,[data-theme=classic] .tv-display .tv-art{border-color:#dfe7e3;box-shadow:var(--shadow)}
+[data-theme=classic] .tv-display .panel-heading h2{text-decoration:none;color:#10343c}
+[data-theme=classic] .tv-display .panel-heading{border-bottom:1px solid #dfe7e3}
+[data-theme=classic] .tv-display .route-row{border-color:#dfe7e3;background:#f7f9f7}
+[data-theme=classic] .tv-display .route-row.prayer{background:#dff3eb;border-color:#2c9c8a}
+[data-theme=classic] .tv-display .route-row.current{background:#fff4dd;outline-color:#e7ad44;box-shadow:inset 3px 0 0 #e7ad44}
+[data-theme=classic] .tv-display .source-status{color:#70858a}
+[data-theme=classic] .tv-display .home-notes-panel{background:#e9dfcc;border-color:#d2c3aa;box-shadow:var(--shadow)}
+[data-theme=classic] .tv-display .notes-board{background-color:#e3d6bb;border-color:#b89c73;outline:1px solid #a28862;box-shadow:0 12px 30px #09272e15}
+[data-theme=classic] .tv-display .sticky-note{box-shadow:0 5px 11px #55473622}
+[data-theme=classic] .tv-display .kid-avatar{background:#dff3eb;border-color:#2c9c8a;color:#10343c;box-shadow:none}
+[data-theme=classic] .tv-display .achievement{border-color:#dfe7e3;border-radius:10px}
+[data-theme=classic] .tv-display .display-footer{background:#0a2028;border-color:#10343c}
+[data-theme=classic] .tv-display .page-label{color:#b7cec9}
+[data-theme=classic] .tv-display .page-label.selected{color:#e7ad44}
+[data-theme=classic] .tv-display .page-label.selected:after,[data-theme=classic] .tv-display .display-footer .timer span{background:#e7ad44}
+[data-theme=classic] .phone .topbar{background:linear-gradient(110deg,#0a2028,#10343c);color:#fffdf8;border-bottom:2px solid #e7ad44}
+[data-theme=classic] .phone .topbar .brand small,[data-theme=classic] .phone .topbar .connection{color:#dff3eb}
+[data-theme=classic] .phone .nav{background:#fffdf8;border-color:#dfe7e3;box-shadow:0 -5px 20px #09272e12}
+[data-theme=classic] .phone .nav button[aria-selected=true]{background:#dff3eb;color:#10343c;border-color:#2c9c8a}
+[data-theme=classic] .phone .card,[data-theme=classic] .phone .page-pick,[data-theme=classic] .phone .phone-day-hero,[data-theme=classic] .phone .login-card,[data-theme=classic] .phone .home-metrics button{box-shadow:var(--shadow);border-color:#dfe7e3}
+[data-theme=classic] .phone .phone-day-hero{background:#dff3eb}
+[data-theme=classic] .phone .btn.primary{background:#10343c;color:#fffdf8;border-color:#10343c;box-shadow:none}
+[data-theme=classic] .phone .remote-screen{background:linear-gradient(120deg,#0a2028,#10343c);color:#fffdf8;border-color:#10343c;box-shadow:var(--shadow)}
+[data-theme=classic] .phone .remote-screen .screen-meta,[data-theme=classic] .phone .remote-screen .eyebrow{color:#c6dfd8}
+[data-theme=classic] .phone .page-pick.selected{background:#dff3eb;border-color:#2c9c8a}
+[data-theme=classic] .tv-display #dateFull{color:#dff3eb}
+[data-theme=classic] .phone .remote-screen .screen-icon{stroke:#e7ad44}
+[data-theme=classic] .phone .theme-choice{background:#fffdf8}
